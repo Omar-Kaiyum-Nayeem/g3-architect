@@ -9,7 +9,8 @@ body {
 header {
   background-color: #ff900e1a;
   width: 100%;
-  height: 1322px;
+  height: 1400px;
+  margin-bottom: 85px;
 }
 
 /* nav section */
@@ -66,16 +67,64 @@ nav div a {
   font-size: 20px;
   font-weight: 600;
   border-radius: 8px;
-  border: solid ;
+  border: solid;
   background: #ff900e;
-  margin-bottom: 50px;
+}
+
+.banner {
+  margin: 45px 220px;
 }
 /* header section end */
+
+/* Quick list of our Features start */
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 76px;
+  padding: 0 230px;
+}
+
+.team-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.team-tl-ash {
+  color: #727272;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.team-tl-black {
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.team-tl-orange {
+  color: #ff900e;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.team-description {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Quick list of our Features end */
 
 /* responsive for mobile device */
 
 @media screen and (max-width: 576px) {
   /* nav section */
+  header {
+    height: 880px;
+  }
 
   nav {
     flex-direction: column;
@@ -86,15 +135,45 @@ nav div a {
     gap: 30px;
   }
 
-  .brand-description{
+  .brand-description {
     margin: 30px 10px;
   }
+
+  .banner {
+    width: 80%;
+    height: 80%;
+    margin: 20px 30px;
+  }
+
+  /* Quick list of our Features */
+
+  .team {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .team-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+
+  .team-img img{
+    width: 90%;
+    height: 90%;
+  }
+
 }
 
 /* responsive for tablet device */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
   /* nav section */
+  header {
+    height: 920px;
+  }
 
   nav {
     flex-direction: column;
@@ -105,7 +184,21 @@ nav div a {
     gap: 100px;
   }
 
-  .brand-description{
+  .brand-description {
     margin: 30px 10px;
+  }
+
+  .banner {
+    width: 80%;
+    height: 80%;
+    margin: 20px 70px;
+  }
+
+  /* Quick list of our Features */
+
+  .team {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
   }
 }
