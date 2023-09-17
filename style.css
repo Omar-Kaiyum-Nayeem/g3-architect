@@ -84,6 +84,7 @@ nav div a {
   align-items: center;
   gap: 76px;
   padding: 0 230px;
+  margin-bottom: 120px;
 }
 
 .team-img {
@@ -113,10 +114,79 @@ nav div a {
 .team-description {
   color: #727272;
   font-size: 16px;
-  font-weight: 400;
 }
 
 /* Quick list of our Features end */
+
+/* Features section Start */
+
+.features-section {
+  display: flex;
+  gap: 140px;
+  margin: 0 230px;
+}
+
+.our-features {
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+  padding-left: 20px;
+  border-left: solid #ff900e;
+}
+
+.our-features-description {
+  color: #727272;
+  font-size: 16px;
+}
+
+.features {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.features-title {
+  color: #131313;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 25px 0 0 25px;
+}
+
+.features-description {
+  color: #727272;
+  font-size: 16px;
+  padding: 0 25px 25px;
+}
+
+.ten-year {
+  color: #fff;
+  text-align: center;
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.experience {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+}
+
+.button-3 button {
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  background: #ff900e;
+}
+
+.button-3 {
+  position: relative;
+  top: -140px;
+  text-align: center;
+  margin-left: 150px;
+  margin-bottom: -140px;
+}
+
+/* Features section End */
 
 /* responsive for mobile device */
 
@@ -154,17 +224,45 @@ nav div a {
     padding: 0 20px;
   }
 
+  .team div h2 {
+    text-align: center;
+  }
+
   .team-img {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 24px;
   }
 
-  .team-img img{
+  .team-img img {
     width: 90%;
     height: 90%;
   }
 
+  .button-2 {
+    text-align: center;
+  }
+
+  /* Features section */
+
+  .features-section {
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 20px;
+    justify-content:;
+  }
+
+  .features-section div img{
+    width: 70%;
+    height: 70%;
+    margin-left: 50px;
+  }
+
+  .button-3{
+    position: relative;
+    top: 20px;
+    margin: 0;
+  }
 }
 
 /* responsive for tablet device */
@@ -200,5 +298,36 @@ nav div a {
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
+    padding: 0 20px;
   }
+
+  .team div h2,
+  .team-description {
+    text-align: center;
+  }
+
+  .button-2 {
+    text-align: center;
+  }
+
+    /* Features section */
+
+    .features-section {
+      flex-direction: column;
+      gap: 40px;
+      margin: 0 20px;
+      justify-content:;
+    }
+  
+    .features-section div img{
+      width: 70%;
+      height: 70%;
+      margin-left: 100px;
+    }
+  
+    .button-3{
+      position: relative;
+      top: 20px;
+      margin: 0;
+    }
 }
